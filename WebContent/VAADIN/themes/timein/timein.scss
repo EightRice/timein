@@ -1,0 +1,139 @@
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+$v-app-loading-text: "Timing in...";
+
+//$v-font-family: "Helvetica";
+//$v-app-background-color: #fff;
+//$v-background-color: #eee;
+$v-focus-color: #7F8085;
+$v-focus-style: 0 0 0 1px $v-focus-color;
+$valo-menu-background-color: darken($v-focus-color, 10%);
+//$v-border: 0 solid v-shade;
+$v-border-radius: 0px;
+$v-bevel: false;
+$v-gradient: false;
+$v-shadow: true;
+$v-textfield-bevel: false;
+$v-textfield-shadow: false;
+$v-textfield-border: 1px solid v-shade;
+$v-link-text-decoration: none;
+//$v-overlay-shadow: 0 0 0 2px #000;
+//$v-overlay-border-width: 2px; // For IE8
+//$v-window-shadow: $v-overlay-shadow;
+$v-selection-overlay-background-color: #fff;
+$v-selection-overlay-padding-horizontal: 0;
+//$v-selection-overlay-padding-vertical: 6px;
+//$v-panel-border: 2px solid v-shade;
+
+
+@import "../valo/valo.scss";
+
+@mixin timein {
+  @include valo;
+.v-slider-feedback{display:none}
+.test{background-color:#6870C4}
+.trans{background:transparent}
+.apa{padding-left:10px;padding-right:10px;padding-top:17px}  
+.tag{color:#B8EDF5;background-color:transparent;border:0px}
+.tag2{color:#00228A;background-color:transparent;border:0px;font-size:13px;font-weight:bold}
+.makeit{padding-left:5px;color:#A3007A;background-color:transparent;border:0px}
+.baraslot{background:#4B6469}
+.headate{background:#4B6469;color:#B8EDF5;font-size:13px;text-align:center;vertical-align:text-middle;}
+.headat{background:#B8EDF5;color:#4B6469;font-size:13px;text-align:center;vertical-align:text-middle;}
+.albastru{background:#9DB0FC}
+.ora{background:#222C2E;color:#FAFEFF;font-size:16px;font-family:"System";text-align:center;vertical-align:text-middle;}
+.datili{text-align:right;color:#B8EDF5;background-color:transparent;border:0px;padding-right:8px}
+.albastru .v-icon{font-size: 25px;}
+.rosu{background: #FC9D9D;} 
+.copy{font-weight:bold;font-size:8px}
+.forsug{background:#FFFFFF;box-shadow:3px 8px 7px #CCCCCC;margin:3px;}
+.name{font-weight:bold;font-size:22px;text-align:center}
+.mic{padding-top:6px;font-weight:bold;font-size:10px;text-align:center}
+.mij{font-weight:bold;font-size:11px;text-align:right;padding-right:4px}
+.textsug{font-size:14px;font-weight:bold;border:1px;padding-right:2px}
+.marius{background:transparent;color:#4455AA;border:hidden} 
+.rosu .v-icon{font-size: 24px;}
+.texta{border:3px}
+.facebook{padding-left:5px;padding-right:5px;padding-top:5px;padding-bottom:5px}
+.linkfb{background:	#B8BDE3;text-align:center;vertical-align:text-middle}
+.fbops{padding-left:11px}
+.orain{background:transparent;color:#4B6469;font-size:20px;font-weight:bold;padding-left:35px;vertical-align:top}
+.mksug{background:transparent;padding-right:20px;color:#A3007A;border:2px;font-size:12px;font-weight:bold}
+.mksg{font-size:10px;font-weight:bold;background:#FFFFFF;color:#4A1212;}
+.motto{font-weight:bold;font-size:14px}
+.meniu{border:0px;font-size:19px;color:#6870C4;background:#FFFFFF;vertical-align:text-middle;}
+.cauta{padding-right:18px}
+.contur{border:1px; border-style: solid;border-color:#B6B7C2}
+.cautare{border-radius:3px;border:0px}
+.but{background:#4B6469;color:#C7F1FF;border:0px}
+.rotund{border-radius: 4px;}
+.data{padding-left:3px}
+.post1{background:#F3DEFF;box-shadow: 3px 3px 3px #CCCCCC;margin:3px}
+.post2{background:#FDDEFF;box-shadow: 0px 3px 3px #CCCCCC;margin:3px}
+.post3{background:#EFDEFF;box-shadow: 1px 3px 3px #CCCCCC;margin:3px}
+.post4{background:#DEDEFF;box-shadow: 1px 4px 3px #CCCCCC;margin:3px}
+.post5{background:#DEF2FF;box-shadow: 0px 3px 3px #CCCCCC;margin:3px}
+.post6{background:#DEFFFB;box-shadow: 2px 3px 4px #CCCCCC;margin:3px}
+.post7{background:#E6FFDE;box-shadow: 1px 3px 3px #CCCCCC;margin:3px}
+.post8{background:#FCFFDE;box-shadow: 0px 3px 3px #CCCCCC;margin:3px}
+.post9{background:#FFEBDE;box-shadow: 0px 3px 3px #CCCCCC;margin:3px}
+.belle{padding-left:2px;font-size:14px;}
+.butoane{border:0px;font-size:19px;color:#6870C4;background:#FFFFFF}
+.bold{background-color:transparent;font-weight:bold;color:#2A24D4;border:0px}
+.sug{padding-left:13px;}
+.osuge{border:1px solid #CCCCCC}
+.nosluts{font-size:25px;font-weight:bold;color:#BFBFBF;text-align:center;vertical-align:middle}
+.click{font-size:18px;font-weight:bold;color:#757474;text-align:center;padding-right:6px}
+.accept{background:#12B500;color:#FFFFFF;border-radius:5px}
+.decline{background:#F76868;border-radius:5px}
+.ignore{color:#C9C9C9;background:#911111;border-radius:5px}
+.optiuni{background-color:transparent;padding-top:6px;padding-bottom:6px;}
+.done{padding-bottom:150px}
+.hopa{color:#4455AA;}
+.postfont{font-weight:bold;font-size:13px}
+.paddingleft{padding-left:2px}
+.info{padding-top:20px;padding-left:4px;font-size:13px;font-weight:bold}
+.pic{border:1px solid #2A24D4}
+.umbra{box-shadow: 0px 4px 5px #CCCCCC;padding-bottom:0px;background:#FFFFFF}
+.degajat{padding-left:10px;padding-right:10px;padding-top:15px;padding-bottom:15px;}
+.degajat2{padding-left:20px;padding-right:10px;padding-top:15px;padding-bottom:15px;}
+.spatiu{padding-left:5px;padding-right:4px}
+.pos1{background:#F3DEFF;box-shadow: 3px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos2{background:#FDDEFF;box-shadow: 0px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos3{background:#EFDEFF;box-shadow: 1px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos4{background:#DEDEFF;box-shadow: 1px 4px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos5{background:#DEF2FF;box-shadow: 0px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos6{background:#DEFFFB;box-shadow: 2px 3px 4px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos7{background:#E6FFDE;box-shadow: 1px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos8{background:#FCFFDE;box-shadow: 0px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos9{background:#FFEBDE;box-shadow: 0px 3px 3px #CCCCCC;margin:3px;border:2px;border-color:#4B6469}
+.pos0{border:2px;border-color:#4B6469;background:#FFEBDE;box-shadow: 0px 3px 3px #CCCCCC;margin:3px} 
+ 
+  // Insert your own theme rules here
+}
